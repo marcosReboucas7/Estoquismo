@@ -1,4 +1,6 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Estoquismo.Entities;
+
+using Microsoft.EntityFrameworkCore;
 
 namespace Estoquismo.Context
 {
@@ -9,7 +11,7 @@ namespace Estoquismo.Context
         {
         }
 
-        public DbSet<Entities.Equipamentos> Equipamentos { get; set; }
-        public DbSet<Entities.Tecnicos> Tecnicos { get; set; }
+        public DbSet<Equipamentos> Equipamentos { get; set; }
+        public DbSet<Tecnicos> Tecnicos { get; set; }
     }
 }

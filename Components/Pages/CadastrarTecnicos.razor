@@ -1,24 +1,51 @@
 ﻿@page "/cadastrar-tecnicos"
+@using Estoquismo.Entities
+@using Estoquismo.Services
+@inject ITecnicoService TecnicoService
 @rendermode InteractiveServer
-
-<meta charset="utf-8" />
 
 <title>Cadastrar Técnicos</title>
 
 
 <h3>Cadastrar Tecnicos</h3>
+<hr />
 
-<form>
-    <div class="mb-3">
-        <label for="nomeTecnico" class="form-label">Nome do Técnico</label>
-        <input type="text" class="form-control" id="nomeTecnico" placeholder="Digite o nome do técnico">
-        <input type="submit" value="Cadastrar" class="btn btn-primary" color="black" />
+<EditForm Model="@tecnico" OnValidSubmit="SalvarTecnico">
+    <DataAnnotationsValidator />
+    <ValidationSummary />
+
+    <div class="form-group mb-3">
+        <label for="name">Nome do Técnico</label>
+        <InputText id="name" class="form-control" @bind-Value="tecnico.Name"/>
     </div>
-    
-</form>
 
-@code {
+    <div class="form-group mb-3">
+        <label for="Email">Email</label>
+        <InputText id="specialty" class="form-control" @bind-Value="tecnico.Email" />
+    </div>
+
+    <button type="submit" class="btn btn-primary">Salvar</button>
+    </EditForm>
 
 
+    @code {
 
+
+        private Tecnicos tecnico = new();
+        private string? mensagem;
+
+        private async Task SalvarTecnico()
+        {
+            try
+            {
+                await TecnicoService.CreateTecnicoAsync(tecnico);
+                mensagem = "Técnico cadastrado com sucesso!";
+                tecnico = new Tecnicos();
+                StateHasChanged();
+            }
+            catch (Exception ex)
+            {
+                mensagem = $"Erro ao cadastrar técnico: {ex.Message}";
+            }
+    }
 }

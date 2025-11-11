@@ -1,0 +1,19 @@
+﻿@page "/cadastrarequipamentos"
+@using Estoquismo.Context
+@using Estoquismo.Entities
+@inject AppDbContext _context
+
+<h3>Cadastrar Equipamentos</h3>
+
+
+
+@code {
+    private Equipamentos equipamento = new();
+
+    private void SalvarEquipamento()
+    {
+        _context.Equipamentos.Add(equipamento);
+        _context.SaveChanges();
+        equipamento = new(); // limpa o formulário
+    }
+}

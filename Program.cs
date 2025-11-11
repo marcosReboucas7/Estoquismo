@@ -1,4 +1,5 @@
 using Estoquismo.Components;
+using Estoquismo.Services;
 using Estoquismo.Context;
 using Microsoft.EntityFrameworkCore;
 
@@ -6,6 +7,8 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection")));
+
+builder.Services.AddScoped<ITecnicoService, TecnicoService>();
 
 // Add services to the container.
 builder.Services.AddRazorComponents()
