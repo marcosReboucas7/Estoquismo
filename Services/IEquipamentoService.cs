@@ -6,7 +6,7 @@ namespace Estoquismo.Services
     {
 
         Task<IEnumerable<Equipamentos>> GetAllEquipamentosAsync();
-        Task<IEnumerable<Equipamentos>> GetEquipamentosByIdAsync(int id);
+        Task<Equipamentos> GetEquipamentosByIdAsync(int id);
         Task<IEnumerable<Equipamentos>> GetEquipamentosByNameAsync(string name);
         Task<IEnumerable<Equipamentos>> GetEquipamentosByTypeAsync(string type);
         Task<IEnumerable<Equipamentos>> GetEquipamentosByMonthAsync(int month, int year);

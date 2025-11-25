@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "eD1kriYifN8=",
+  "dgSpecHash": "WED2VOOE/HA=",
   "success": true,
-  "projectFilePath": "C:\\Users\\ClienteRT\\OneDrive\\ProjectsC#\\Estoquismo\\Estoquismo\\Estoquismo.csproj",
+  "projectFilePath": "C:\\Users\\ClienteRT\\EstoquismoC#\\Estoquismo\\Estoquismo.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ClienteRT\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\ClienteRT\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\7.0.0\\microsoft.bcl.asyncinterfaces.7.0.0.nupkg.sha512",
@@ -51,7 +51,11 @@
     "C:\\Users\\ClienteRT\\.nuget\\packages\\system.reflection.metadata\\7.0.0\\system.reflection.metadata.7.0.0.nupkg.sha512",
     "C:\\Users\\ClienteRT\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
     "C:\\Users\\ClienteRT\\.nuget\\packages\\system.text.json\\9.0.11\\system.text.json.9.0.11.nupkg.sha512",
-    "C:\\Users\\ClienteRT\\.nuget\\packages\\system.threading.channels\\7.0.0\\system.threading.channels.7.0.0.nupkg.sha512"
+    "C:\\Users\\ClienteRT\\.nuget\\packages\\system.threading.channels\\7.0.0\\system.threading.channels.7.0.0.nupkg.sha512",
+    "C:\\Users\\ClienteRT\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\9.0.11\\microsoft.windowsdesktop.app.ref.9.0.11.nupkg.sha512",
+    "C:\\Users\\ClienteRT\\.nuget\\packages\\microsoft.netcore.app.ref\\9.0.11\\microsoft.netcore.app.ref.9.0.11.nupkg.sha512",
+    "C:\\Users\\ClienteRT\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\9.0.11\\microsoft.aspnetcore.app.ref.9.0.11.nupkg.sha512",
+    "C:\\Users\\ClienteRT\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\9.0.11\\microsoft.netcore.app.host.win-x64.9.0.11.nupkg.sha512"
   ],
   "logs": []
 }
